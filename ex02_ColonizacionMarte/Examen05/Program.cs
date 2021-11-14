@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ColonizacionMarte
+namespace Examen05
 {
     class Program
     {
