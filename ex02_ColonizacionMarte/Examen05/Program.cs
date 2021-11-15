@@ -11,7 +11,7 @@ namespace Examen05
             Console.WriteLine("que estarán ubicados en las planicies (A)cidalia, (E)lysium y (U)topia.");
             Console.WriteLine("Cada lanzamiento tiene un cargamento de hasta 10.000 kg.\n");
 
-            Lanzamiento[] ArregloLanzamientos = new Lanzamiento[6];
+            Lanzamiento[] ArregloLanzamientos = new Lanzamiento[15];
             int i = 0;
 
             //inicializamos los arreglos que totalizan
