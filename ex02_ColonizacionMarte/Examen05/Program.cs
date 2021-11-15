@@ -53,6 +53,8 @@ namespace Examen05
                 }
             }
 
+            float promedios = Promedios(ArregloLanzamientos);
+
             //Aqui visualizamos resultados
             Console.WriteLine("\n\nResultados obtenidos de los lanzamientos:\n");
             Console.WriteLine("Las planicies son A(cidalia), E(lysium) y U(topia)\n");
@@ -64,7 +66,25 @@ namespace Examen05
                 Console.WriteLine($"Destino: {ArregloLanzamientos[i].planicie}");
                 Console.WriteLine();
             }
+            
+            Console.WriteLine($"\nPromedio: {promedios}");
 
+        }
+
+        static float Promedios(Lanzamiento[] lanzamientos)
+        {
+
+            float promedios = 0;
+            int i;
+
+            for (i = 0; i < lanzamientos.Length; i++)
+            {
+                promedios += lanzamientos[i].carga;
+
+            }
+            promedios /= lanzamientos.Length;
+
+            return promedios;
         }
 
         /// <summary>
